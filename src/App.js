@@ -29,24 +29,13 @@ const App = () => {
 		setSearchField(searchFieldString);
 	};
 
-	const onTitleChange = (event) => {
-		const searchFieldString = event.target.value.toLowerCase();
-		setTitle(searchFieldString);
-	};
-
 	return (
 		<div className="App">
-			<h1 className="app-title">{title}</h1>
+			<h1 className="app-title">Monster Rolodex</h1>
 
 			<SearchBox
 				onChangeHandler={onSearchChange}
 				placeholder="Search monsters"
-				className="search-box"
-			/>
-			<br />
-			<SearchBox
-				onChangeHandler={onTitleChange}
-				placeholder="Set title"
 				className="search-box"
 			/>
 
